@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+ 
+    background-color:white;
+    background-image: url(https://images.pexels.com/photos/977603/pexels-photo-977603.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.icon{
+    height: 50px;
+    width: 100px;
+    /* border: 1px solid; */
+    transition: all;
+    animation-name: sidebar;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1); 
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+}
+.fa-right-long{
+    font-size: 50px;
+    top: -600px;
+    left: 20px;
+    color: red;
+   
+}
+@keyframes sidebar{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(20px);
+    } 
+} 
+.img{
+    transition: all;
+  animation-name: rider;
+  animation-duration: 3s;
+   /* animation-timing-function:;  */
+ animation-fill-mode: backwards;
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+@keyframes rider {
+
+    from {
+     transform: translateX(-900px);
+        }
+        to{
+       transform: translateX(900px);
+        }
+}
+
+
+.chasis{
+ margin-left: 170px;
+ position: relative;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box1{
+     height: 250px;
+    width: 250px;
+    border: 10px dashed black;
+    background-color:gold;
+    border-radius: 50%;
+    margin-left: 290px;
+    margin-top: -80px;
+   transition: all;
+     animation-name: loader;
+     animation-duration: 3s;
+      /* animation-timing-function: ;  */
+     animation-fill-mode: backwards;
+     animation-delay: 1s;
+     animation-iteration-count: 5;
+  
+}
+@keyframes loader{
+    from{
+        transform: translateX(-900px) rotate(0deg);
+     
+    }
+    to{
+        transform: translateX(900px) rotate(360deg);
+     
+    } 
+}
+.box2{
+   height: 250px;
+    width: 250px;
+    border: 10px dashed black;
+    background-color:gold;
+    border-radius: 50%;
+    margin-right: 290px;
+    margin-top: -50px;
+    transition: all;
+    animation-name: loader2;
+    animation-duration: 3s;
+     /* animation-timing-function:;  */
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+ 
+    
+}
+@keyframes loader2{
+    from{
+        transform: translateX(-900px) rotate(0deg);
+       
+    }
+    to{
+        transform: translateX(900px)  rotate(360deg);
+      
+    } 
+}

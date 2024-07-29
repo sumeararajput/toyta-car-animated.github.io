@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Arial, sans-serif;
+}
+.container{
+    height: 665vh;
+    /* width: 98vw; */
+ background-color: black;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+   
+
+}
+.nav{
+    padding-left: 10px;
+    padding-right: 10px;
+     background-color:rgba(0, 0, 0, 0.842);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.navlist{
+    list-style: none;
+    margin-right: 50px;
+}
+.navlinks{
+   display: inline;
+   font-size: 30px;
+   margin-left: 30px;
+   color: white;
+   
+} 
+
+ .navlinks:hover{
+    background-color:  white;
+    color: black;
+    cursor: pointer;
+    padding: 0 10px;
+    
+ } 
+ .carinfo{
+    /* border: 1px solid; */
+    height: 450px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 15px;
+   display: inline-block;
+  position: relative;
+  z-index: 999;
+ }
+ .carinfoh1{
+ font-size: 70px;
+ color: red;
+margin-top: 20px;
+ letter-spacing: 8px;
+ animation-name:clrchange;
+ animation-duration: 2s;
+ animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+ }
+ @keyframes clrchange{
+ from{
+    color:red;
+ }
+ to{
+    color: white;
+ }
+} 
+
+.carinfoh2{
+    color: white;
+}
+
+ .carinfoh3{
+   
+    font-weight: 1500;
+    margin-top: 10px;
+    color: white;
+} 
+.carinfoh4{
+    font-size: bold;
+    text-align: justify;
+    margin-top: 10px;
+    color: white;
+}
+.btn1{
+    padding: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px red;
+    box-shadow: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    
+}
+.btn1:hover{
+    cursor: pointer;
+    background-color: red;
+    box-shadow: none;
+    border: none;
+}
+.btn2{
+    padding: 10px 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px red;
+    box-shadow: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-left: 5px;
+}
+.btn2:hover{
+    cursor: pointer;
+    background-color: red;
+    box-shadow: none;
+    border: none;
+}
+.carpicture{
+   
+    margin-top: -32%;
+    margin-left: 50%;
+  
+}
+.car{
+   position: absolute;
+    height: 450px;
+    width: 700px;
+    right:0 ;
+    top: 150px;
+    animation-name: car;
+    animation-duration: 5s;
+}
+@keyframes car{
+     from {
+        transform: translateX(800px);
+           }
+    to{
+          transform: translateX(-1000px);
+           } 
+        
+ }
+ .tire1{
+    position: relative;
+    height: 110px;
+    width: 130px;
+    top:305px ;
+    left: 125px;
+    animation-name: tire;
+    animation-duration: 5s;
+}
+@keyframes tire{
+    from {
+       transform: translateX(800px);
+          }
+   to{
+         transform: translateX(-1000px);
+          } 
+       
+}
+ 
+.tire2{
+    position: relative;
+    height: 127px;
+    width: 127px;
+    top: 310px;
+    left: 370px;
+    animation-name: tire2;
+    animation-duration: 5s;
+   
+}
+@keyframes tire2{
+    from {
+       transform: translateX(800px);
+          }
+   to{
+         transform: translateX(-1000px);
+          } 
+       
+}
+
